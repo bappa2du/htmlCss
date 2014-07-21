@@ -35,23 +35,25 @@
             label
             {
                 width: 45%;
-                float: left;
+                display: inline-block;
+
             }
             input
             {
-                float: left;
+
                 width: 45%;
             }
 
-            button
+
+
+            ul::after
             {
-                float: left;
+                content: "";
+                display: block;
                 clear: both;
-            }
-            .clearfix
-            {
-                float: none;
-                clear: both;
+                height: 0;
+                visibility: hidden;
+                font-size: 0;
             }
 
         </style>
@@ -91,7 +93,7 @@
                 <li>
                     <button>Submit</button>
                 </li>
-                <li class="clearfix"></li>
+                
             </ul>
         </fieldset>
     </body>
