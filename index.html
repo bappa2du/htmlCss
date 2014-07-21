@@ -22,6 +22,14 @@
             ul li
             {
                 padding: 4px;
+
+            }
+
+            li
+            {
+                background-color: cornflowerblue;
+                float: left;
+                width: 90%;
             }
             label
             {
@@ -34,9 +42,15 @@
                 width: 45%;
             }
 
-            li:first-child
+            button
             {
-                background-color: greenyellow;
+                float: left;
+                clear: both;
+            }
+            .clearfix
+            {
+                float: none;
+                clear: both;
             }
         </style>
     </head>
@@ -73,8 +87,9 @@
                     <input type="password" placeholder="****">
                 </li>
                 <li>
-                    <input type="submit" value="Submit">
+                    <button>Submit</button>
                 </li>
+                <li></li>
             </ul>
         </fieldset>
     </body>
